@@ -18,13 +18,13 @@ dependencies {
 //    implementation group: 'com.google.guava', name: 'guava', version: '19.0'
 //    implementation "org.scala-lang:scala-library:2.11.7"
     } else {
-        compile fileTree(dir: 'libs', include: ['*.jar'])
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
         testCompile 'junit:junit:4.12'
-        compile "com.android.support:appcompat-v7:23.1.1"
-        compile("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}") { changing = true }
+        implementation "com.android.support:appcompat-v7:23.1.1"
+        implementation("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}") { changing = true }
         provided("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") { changing = true }
 
-        compile "com.android.support:multidex:1.0.1"
+        implementation "com.android.support:multidex:1.0.1"
 
         //use to test multiDex
 //    compile group: 'com.google.guava', name: 'guava', version: '19.0'
