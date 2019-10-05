@@ -9,7 +9,7 @@ tinker_demo使用方法：
 
 2.修改代码，例如将MainActivity中 Toast.makeText(this, "I have fixed by tinker", Toast.LENGTH_SHORT).show(); 打开。然后我们需要修改build.gradle中的参数，将步骤一编译保存的安装包路径拷贝到ext中的oldApk参数中，四个oldApk路径都要替换。如下图：
 
-![image](https://github.com/gaoleiandroid1201/AndroidLearnProject/raw/master/res/tinker_img1.png)
+![image](https://github.com/gaoleiandroid1201/HotFix/raw/master/res/tinker_img1.png)
 
 3.调用./gradlew tinkerPatchDebug, 补丁包与相关日志会保存在/build/outputs/tinkerPatch/。然后我们将patch_signed_7zip.apk推送到手机的sdcard中。
 
