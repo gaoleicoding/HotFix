@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/HotFix-hotfix-sample.iml" filepath="$PROJECT_DIR$/HotFix-hotfix-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/hotfix-sample.iml" filepath="$PROJECT_DIR$/hotfix-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sophix_demo/hotfix-sample-sophix_demo.iml" filepath="$PROJECT_DIR$/sophix_demo/hotfix-sample-sophix_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tinker_demo/hotfix-sample-tinker_demo.iml" filepath="$PROJECT_DIR$/tinker_demo/hotfix-sample-tinker_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sophix_demo/sophix_demo.iml" filepath="$PROJECT_DIR$/sophix_demo/sophix_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/tinker_demo/tinker_demo.iml" filepath="$PROJECT_DIR$/tinker_demo/tinker_demo.iml" />
     </modules>

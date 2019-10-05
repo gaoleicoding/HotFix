@@ -41,12 +41,13 @@ import com.tencent.tinker.lib.tinker.TinkerInstaller;
 import com.tencent.tinker.loader.shareutil.ShareConstants;
 import com.tencent.tinker.loader.shareutil.ShareTinkerInternals;
 
+import java.io.File;
+
 import tinker.sample.android.R;
 import tinker.sample.android.util.Utils;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "Tinker.MainActivity";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 requestPermission();
             }
         });
-        Toast.makeText(this, "I have fixed by tinker", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "I have fixed by tinker", Toast.LENGTH_SHORT).show();
 
         Button loadLibraryButton = (Button) findViewById(R.id.loadLibrary);
 
@@ -176,7 +177,13 @@ public class MainActivity extends AppCompatActivity {
         PermissionsUtil.requestPermission(this, new PermissionListener() {
             @Override
             public void permissionGranted(@NonNull String[] permissions) {
-                TinkerInstaller.onReceiveUpgradePatch(getApplicationContext(), Environment.getExternalStorageDirectory().getAbsolutePath() + "/patch_signed_7zip.apk");
+                String path=Environment.getExternalStorageDirectory().getAbsolutePath() + "/patch_signed_7zip.apk";
+                File file=new File(path);
+                if(file.exists()) {
+                    TinkerInstaller.onReceiveUpgradePatch(getApplicationContext(), path);
+                }else {
+                    Toast.makeText(MainActivity.this,"没有找到patch_signed_7zip.apk",Toast.LENGTH_SHORT);
+                }
 
             }
 
