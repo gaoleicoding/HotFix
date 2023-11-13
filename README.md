@@ -2,7 +2,7 @@
 Tikner：https://github.com/Tencent/tinker
 
  v1.9.14.26 Latest
-![image](https://github.com/gaoleicoding/HotFix/assets/16413477/6d06a85e-ce91-4d43-b3dd-7bd4d64a8dc3)
+![image](https://github.com/gaoleicoding/HotFix/assets/16413477/89c0de8c-aabf-467a-9a97-058b80d3fc41)
 
 1、Tinker搭配的这些，目前没发现啥问题：
 minsdk <=21
@@ -16,6 +16,7 @@ R8 4.0.71
 3、tinkerId 和new tinkerId 需要不一样
 tinkerId = getTinkerIdValue() // tinkerId 可以设为项目的版本号，作为基准
 configField("NEW_TINKER_ID", "\"${releaseTime()}\"")// new tinkerId 可以设为项目的打包时间，不断更新
+<img width="209" alt="93225de04f802999210218567a3b63a" src="https://github.com/gaoleicoding/HotFix/assets/16413477/c716e90c-c0ec-4bf8-aa5f-a109d23b20bb">
 
 
 4、测试时可把补丁推送到SD卡，adb push “patch文件的路径” /storage/emulated/0/Android/data/包名/files/
