@@ -12,6 +12,14 @@ Gradle 7.5.1
 R8 4.0.71
 
 2、看看logcat  tag是 Tinker. 开头，可查看遇到的问题
+    //patch listener error code
+    public static final int ERROR_PATCH_OK                = 0;
+    public static final int ERROR_PATCH_DISABLE           = -1;
+    public static final int ERROR_PATCH_NOTEXIST          = -2;
+    public static final int ERROR_PATCH_RUNNING           = -3;
+    public static final int ERROR_PATCH_INSERVICE         = -4;
+    public static final int ERROR_PATCH_JIT               = -5;
+    public static final int ERROR_PATCH_ALREADY_APPLY     = -6;
 
 3、tinkerId 和new tinkerId 需要不一样
 tinkerId = getTinkerIdValue() // tinkerId 可以设为项目的版本号，作为基准
