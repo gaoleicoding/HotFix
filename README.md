@@ -24,10 +24,12 @@ R8 4.0.71
 
 4、tinkerId 和new tinkerId 需要不一样
 
-tinkerId = getTinkerIdValue() // tinkerId 可以设为项目的版本号，作为基准
+Field("TINKER_ID", "\"${getTinkerIdValue()}\"") // tinkerId 可以设为项目的版本号（android.defaultConfig.versionName），作为基准
 
 configField("NEW_TINKER_ID", "\"${releaseTime()}\"")// new tinkerId 可以设为项目的打包时间，不断更新
+![image](https://github.com/gaoleicoding/HotFix/assets/16413477/f9e90ce6-953c-4f61-8640-6da63739112d)
 
+查看patch包结果：
 <img width="209" alt="93225de04f802999210218567a3b63a" src="https://github.com/gaoleicoding/HotFix/assets/16413477/c716e90c-c0ec-4bf8-aa5f-a109d23b20bb">
 
 
