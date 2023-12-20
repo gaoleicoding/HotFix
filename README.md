@@ -33,8 +33,11 @@ configField("NEW_TINKER_ID", "\"${releaseTime()}\"") // new tinkerId 可以设�
 查看patch包结果：
 
 <img width="209" alt="93225de04f802999210218567a3b63a" src="https://github.com/gaoleicoding/HotFix/assets/16413477/c716e90c-c0ec-4bf8-aa5f-a109d23b20bb">
+4、如何打patch包：
+
+![2020031816064317](https://github.com/gaoleicoding/HotFix/assets/16413477/7fb2ea63-371f-4a96-a32d-b46b616bace5)
 
 
-4、测试时可把补丁推送到应用私有目录
+5、测试时可把补丁推送到应用私有目录
 
 adb push “patch文件的路径” /storage/emulated/0/Android/data/包名/files/
