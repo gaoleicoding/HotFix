@@ -14,7 +14,7 @@ R8 4.0.71
 
 ## 2、tinkerId 和new tinkerId 需要不一样
 
-configField("TINKER_ID", "\"${getTinkerIdValue()}\"") // tinkerId 可以设为项目的版本号作为基准
+configField("TINKER_ID", "\"tinker_id_${getTinkerIdValue()}\"") // tinkerId 可以设为项目的versionName作为基准，有一个小细节是必须以**tinker_id_**开头，不然会报错
 
 configField("NEW_TINKER_ID", "\"${releaseTime()}\"") // new tinkerId 可以设为项目的打包时间，不断更新
 
