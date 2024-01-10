@@ -26,7 +26,7 @@ configField("NEW_TINKER_ID", "\"${releaseTime()}\"") // new tinkerId 可以设�
 
 ## 4、把patch包拖拽到AS查看信息：
 
-<img width="209" alt="93225de04f802999210218567a3b63a" src="https://github.com/gaoleicoding/HotFix/assets/16413477/c716e90c-c0ec-4bf8-aa5f-a109d23b20bb">
+![1704877292982](https://github.com/gaoleicoding/HotFix/assets/16413477/a7937bf4-c99f-4726-8211-9d5cb0e329ac)
 
 ## 5、测试时把补丁推送到应用私有目录，也可以放到assets中copy到私有目录
 
